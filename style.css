@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+body {
+    background-color: aquamarine;
+    padding-top: 50px;
+}
+
+.content {
+    width: 100vw;
+    height: auto;
+    padding-top: 60px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 20px;
+}
+
+.container p {
+    max-width: 600px;
+    text-align: center;
+}
+
+#title {
+    font-weight: bold;
+}
+
+.nav1 {
+    margin-left: 60px;
+    padding-top: 10px 0 10px;
+    position: absolute;
+    right: 0;
+}
+
+.list1 li {
+    display: inline;
+}
+
+.list1 li a {
+    margin-right: 20px;
+}
+
+.text {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text:visited {
+    color: black;
+}
+
+.button {
+    border: none ;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+
+.open {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.wrap {
+    background-color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.wrap.visible {
+    transform: translateX(0%);
+}
+
+.black {
+    background-color: black;
+    width: 60%;
+    max-width: 480px;
+    transition-delay: 0.2s;
+}
+
+.white {
+    background-color: white;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+}
+
+.close {
+    opacity: 0.4;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li, .list1 li {
+    margin: 20px 0;
+}
+
+.list li a, .list1 li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media(max-width: 600px) {
+    .nav1 {
+        display: none;
+    }
+}
